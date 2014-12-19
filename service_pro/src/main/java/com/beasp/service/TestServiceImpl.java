@@ -1,11 +1,11 @@
-package com.test.service;
+package com.beasp.service;
 
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service; 
 
-import com.test.dao.TestDaoImpl;
+import com.beasp.dao.TestDaoImpl;
 
 @Service(value="testService")
 public class TestServiceImpl  {
