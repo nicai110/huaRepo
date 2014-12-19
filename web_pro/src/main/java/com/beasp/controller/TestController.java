@@ -1,4 +1,4 @@
-package com.test.controller;
+package com.beasp.controller;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.test.service.TestServiceImpl;
+import com.beasp.service.TestServiceImpl;
 
 @Controller 
 @RequestMapping(value="/test",method=RequestMethod.GET)
