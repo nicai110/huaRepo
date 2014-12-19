@@ -1,4 +1,4 @@
-package com.test.bean;
+package com.beasp.bean;
 
 // Generated 2014-12-17 23:07:39 by Hibernate Tools 4.0.0
 

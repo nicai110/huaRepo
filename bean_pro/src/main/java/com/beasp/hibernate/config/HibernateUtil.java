@@ -1,4 +1,4 @@
-package com.test.hibernate.config;
+package com.beasp.hibernate.config;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
