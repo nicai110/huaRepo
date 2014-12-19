@@ -1,4 +1,4 @@
-package com.test.dao;
+package com.beasp.dao;
 
 /**
  * Hello world!
