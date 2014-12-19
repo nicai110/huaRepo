@@ -34,7 +34,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.test.service</groupId>
+			<groupId>com.beasp.service</groupId>
 			<artifactId>service_pro</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
