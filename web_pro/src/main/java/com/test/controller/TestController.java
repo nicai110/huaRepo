@@ -18,10 +18,9 @@ public class TestController {
 	
 	@Autowired
 	TestServiceImpl testService;
+	
 	@RequestMapping(value="/load/{info}")
 	public ModelAndView  loadData(@PathVariable String info){
-
-		//1
 		Logger.getLogger(getClass()).info(info);
 		ModelAndView mv = new ModelAndView();  
 		ArrayList<String>  al  = testService.load();
