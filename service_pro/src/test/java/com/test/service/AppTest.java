@@ -4,7 +4,7 @@ package com.test.service;
  * Hello world!
  *
  */
-public class App 
+public class AppTest 
 {
     public static void main( String[] args )
     {
