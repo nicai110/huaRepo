@@ -1,7 +1,5 @@
 package com.beasp.bean;
-
-// Generated 2014-12-17 23:07:39 by Hibernate Tools 4.0.0
-
+ 
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,8 +10,8 @@ import javax.persistence.TemporalType;
 
  
 @Entity
-@Table(name = "bea_test", catalog = "bea_sys_db")
-public class BeaTest implements java.io.Serializable {
+@Table(name = "bee_test", catalog = "bee_sys_db")
+public class BeeTest implements java.io.Serializable {
 
 	private long id;
 	private String name;
@@ -21,14 +19,14 @@ public class BeaTest implements java.io.Serializable {
 	private Date insertDate;
 	private String insertUser;
 
-	public BeaTest() {
+	public BeeTest() {
 	}
 
-	public BeaTest(long id) {
+	public BeeTest(long id) {
 		this.id = id;
 	}
 
-	public BeaTest(long id, String name, String text, Date insertDate,
+	public BeeTest(long id, String name, String text, Date insertDate,
 			String insertUser) {
 		this.id = id;
 		this.name = name;
@@ -65,7 +63,7 @@ public class BeaTest implements java.io.Serializable {
 		this.text = text;
 	}
 
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE)
 	@Column(name = "insert_date", length = 19)
 	public Date getInsertDate() {
 		return this.insertDate;
