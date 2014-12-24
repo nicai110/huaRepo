@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.beasp.bean.BeeTest;
 import com.beasp.service.TestServiceImpl;
 
 @Controller 
-@RequestMapping(value="/test",method=RequestMethod.GET)
+//@RequestMapping(value="/test",method=RequestMethod.GET)
 public class TestController {
 	
 	@Autowired
@@ -23,9 +23,18 @@ public class TestController {
 	public ModelAndView  loadData(@PathVariable String info){
 		Logger.getLogger(getClass()).info(info);
 		ModelAndView mv = new ModelAndView();  
-		ArrayList<String>  al  = testService.load();
+		ArrayList<BeeTest>  al  = testService.load();
 		Logger.getLogger(getClass()).info(al.get(0));
 		mv.addObject("message", info);   
+		mv.setViewName("test/list");  
+		return mv;
+	}
+	@RequestMapping(value="/add")
+	public ModelAndView  addData(){ 
+		ModelAndView mv = new ModelAndView();  
+		ArrayList<BeeTest>  al  = testService.load();
+		Logger.getLogger(getClass()).info(al.get(0).getInsertUser()); 
+		mv.addObject("message", al.get(0).getInsertUser()+"--"+al.get(0).getName());  
 		mv.setViewName("test/list");  
 		return mv;
 	}
